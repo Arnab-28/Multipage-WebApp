@@ -10,8 +10,7 @@ if "current_page" not in st.session_state:
 # Function to navigate between pages
 def navigate(page):
     st.session_state.current_page = page
-    st.rerun()
-
+    
 # Render pages based on session state
 if st.session_state.current_page == "Home":
     home_page(navigate)
